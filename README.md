@@ -73,7 +73,15 @@ Use qwen3-embedding:0.6b ya que esta diseñada especialmente para:
   - Es ligero y facil de ejecutar de forma local (equipos de computo con capacidades limitadas)
 En un principio use ChatClient (del paquete org.springframework.ai.chat.client en un proyecto de SpringBoot).
 Sin embargo al procesar los datos para generar la respuesta del asistente, tardaba hasta 45 minutos considerando 4 fragmentos a procesar
-Podemos ver el tiempo de respuesta en esta imagen: http://ingeniabi.com/SpringIA.jpeg
+Podemos ver el tiempo de respuesta en esta imagen:
+<a>
+  <h1 align="center">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="http://ingeniabi.com/SpringIA.jpeg">
+      <img alt="SpringIA" src="http://ingeniabi.com/SpringIA.jpeg">
+    </picture>
+  </h1>
+</a>
 Por temas de performance, decidi integrar el SDK de Anthropic que me permite conectar mi aplicacion con los modelos de IA de Claude
 Esto me permite ralizar la busqueda semantica (mas adelante se explica el proceso a detalle).
 
