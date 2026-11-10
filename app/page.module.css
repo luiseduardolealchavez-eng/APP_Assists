@@ -1,0 +1,50 @@
+.main { max-width: 1200px; margin: 0 auto; padding: 64px 16px; }
+.sub { color: #666; margin-bottom: 24px; }
+.drop {
+  display: flex; flex-direction: column; gap: 8px; align-items: center; justify-content: center;
+  height: 220px; border: 2px dashed #999; border-radius: 12px; cursor: pointer; text-align: center;
+  transition: background .15s, border-color .15s;
+}
+.drop small { color: #888; }
+.active { background: rgba(100, 140, 255, .12); border-color: #648cff; }
+.results { list-style: none; padding: 0; margin-top: 24px; display: grid; gap: 6px; }
+.ok { color: #1a7f37; }
+.err { color: #cf222e; }
+.docs { list-style: none; padding: 0; display: grid; gap: 8px; }
+.docs li { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 12px; border: 1px solid #ccc; border-radius: 8px; }
+.docs div { display: flex; flex-direction: column; min-width: 0; }
+.docs strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.docs small { color: #888; }
+.docs button { color: #cf222e; background: none; border: 1px solid #cf222e; border-radius: 6px; padding: 4px 10px; cursor: pointer; }
+.docs button:hover { background: rgba(207, 34, 46, .1); }
+.chat { display: grid; gap: 8px; margin-bottom: 12px; }
+.msg { padding: 10px 12px; border-radius: 10px; white-space: pre-wrap; max-width: 90%; }
+.user { justify-self: end; background: rgba(100, 140, 255, .18); }
+.bot { justify-self: start; background: rgba(128, 128, 128, .15); }
+.cite { color: #648cff; font-size: .7em; margin-left: 2px; cursor: help; }
+.form { display: flex; gap: 8px; margin-bottom: 32px; }
+.form input { flex: 1; padding: 10px 12px; border: 1px solid #999; border-radius: 8px; background: transparent; color: inherit; }
+.form button { padding: 0 16px; border-radius: 8px; border: none; background: #648cff; color: #fff; cursor: pointer; }
+.form button:disabled { opacity: .5; cursor: default; }
+.paste { display: grid; gap: 8px; margin-top: 24px; }
+.paste input, .paste textarea { padding: 10px 12px; border: 1px solid #999; border-radius: 8px; background: transparent; color: inherit; font: inherit; }
+.paste textarea { resize: vertical; }
+.paste button { justify-self: end; padding: 8px 16px; border-radius: 8px; border: none; background: #648cff; color: #fff; cursor: pointer; }
+.paste button:disabled { opacity: .5; cursor: default; }
+.history { list-style: none; padding: 0; display: grid; gap: 8px; margin-bottom: 32px; }
+.history li { display: flex; flex-direction: column; gap: 4px; padding: 10px 12px; border: 1px solid #ccc; border-radius: 8px; }
+.history small { color: #888; }
+.history p { margin: 0; white-space: pre-wrap; color: #666; }
+.bar { display: flex; justify-content: flex-end; align-items: center; gap: 12px; color: #666; }
+.bar button { padding: 6px 14px; border-radius: 8px; border: 1px solid #999; background: transparent; color: inherit; cursor: pointer; }
+.header { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; }
+.header h1 { margin: 0; }
+.columns { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+.col { min-width: 0; }
+@media (max-width: 800px) { .columns { grid-template-columns: 1fr; } }
+.pager { display: flex; justify-content: center; align-items: center; gap: 12px; margin: 12px 0 32px; color: #666; }
+.pager button { padding: 6px 14px; border-radius: 8px; border: 1px solid #999; background: transparent; color: inherit; cursor: pointer; }
+.pager button:disabled { opacity: .5; cursor: default; }
+
+.alert { position: sticky; top: 0; z-index: 10; display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 16px; padding: 12px 16px; border-radius: 8px; border: 1px solid #cf222e; background: #ffebe9; color: #82071e; }
+.alert button { border: 0; background: transparent; color: inherit; font-size: 1.2rem; cursor: pointer; }
